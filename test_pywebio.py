@@ -19,7 +19,7 @@ import pandas as pd
 def create_general_dict_from_csv():
     names = ['Origine ', 'CCN_USNEF', 'Transport_2019', 'Logistique_2019', 'Total_2019', 'Transport_2020', 'Logistique_2020', 'Total_2020', 'Cotis_2021', 'Normalement', 'Comments']
     dict_general = {}
-    with open('C:\MISSION_EJE\donnes_remastered.csv') as csvfile:
+    with open('donnes_remastered.csv') as csvfile:
         reader = csv.reader(csvfile, delimiter = ';')
         first_try = True
         for row in reader:
